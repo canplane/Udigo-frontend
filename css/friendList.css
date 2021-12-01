@@ -2,30 +2,31 @@
 
 
 
-#my_profile > .user-item {
-    display: flex;
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-}
-#my_profile > .user-item > .img > [class^="material-icons"] {
-    font-size: 2.5rem;
-    display: block;
-    color: #70b3ec;
-    margin-left: -.125rem;
-}
-#my_profile > .user-item > .name {
-    flex: 1;
-    margin-left: .5rem;
-    font-size: 1.125rem;
-}
-
-
-
 #my_friends {
     margin-top: .5rem;
     border-top: 1px solid rgba(177, 195, 212, .25);
 }
+.add_friend-button {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100%;
+}
+.add_friend-button .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+}
+.add_friend-button .icon > [class^="material-icons"] {
+    font-size: 1.5rem;
+    color: rgb(177, 195, 212);
+}
+
+
+
 #my_friends .user-item-container {
     display: flex;
     flex-direction: column;

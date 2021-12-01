@@ -9,9 +9,10 @@
     
     <!-- open graph -->
     <meta name="title" property="og:title" content="Udigo">
-    <meta name="images" property="og:image" content="./resrc/op-image.jpg">
-    <meta name="description" property="og:description" content="위치 공유 소셜 미디어">
-    <meta name="type" property="og:type" content="article">
+    <meta name="type" property="og:type" content="website">
+    <meta name="description" property="og:description" content="위치 공유 소셜 미디어 서비스">
+    <meta name="title" property="og:url" content="https://udigo.netlify.app">
+    <meta name="images" property="og:image" content="https://github.com/canplane/Udigo-frontend/blob/main/resrc/op-image.jpg?raw=true">
 
     <!-- libraries -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
@@ -22,15 +23,13 @@
 
 <body>
     <nav id="navbar">
+        <img class="brand" src="resrc/navbar-brand.svg">
         <ul>
+            <!--<li>
+                <a class="icon" href="#"><span class="material-icons">person_add</span></a>
+            </li>-->
             <li ><!-- Notifications -->
                 <a class="icon icon-noti" href="#"><span class="material-icons">notifications</span></a>
-            </li>
-            <li><!-- Search User -->
-                <a class="icon" href="#"><span class="material-icons">search</span></a>
-            </li>
-            <li><!-- Add a friend -->
-                <a class="icon" href="#"><span class="material-icons">person_add</span></a>
             </li>
             <li><!-- Settings -->
                 <a class="icon" href="#"><span class="material-icons">settings</span></a>
@@ -51,6 +50,9 @@
             <header class="header">
                 <h2>친구</h2>
                 <p class="count">14</p>
+                <div class="add_friend-button"><!-- Add a friend -->
+                    <a class="icon" href="#"><span class="material-icons">person_add</span></a>
+                </div>
             </header>
             <article>
                 <ul class="user-item-container">

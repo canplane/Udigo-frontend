@@ -132,26 +132,34 @@ button {
 
 #navbar {
     padding: 0 .25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
+#navbar > .brand {
+	height: 1.625rem;
+	margin: 0 .75rem;
+}
+
 #navbar > ul {
     margin: 0;
     padding: .5rem 0;
     display: flex;
 }
-#navbar > ul > li:first-child {
+/*#navbar > ul > li:first-child {
     margin-right: auto;
-}
+}*/
 #navbar .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 3rem;
     height: 3rem;
-
-    color: rgb(177, 195, 212);
 }
 #navbar .icon > [class^="material-icons"] {
     font-size: 1.5rem;
+	color: rgb(177, 195, 212);
 }
 
 #navbar .icon.icon-noti {
@@ -168,24 +176,6 @@ button {
     position: absolute;
     top: .75rem;
     right: .5rem;
-}
-
-
-
-/* main */
-
-#main {
-    margin: .5rem 1rem 4rem 1rem;
-}
-section > .header {
-    margin: 1rem 0;
-    display: flex;
-    align-items: center;
-}
-section > .header > .count {
-    font-size: 1rem;
-    margin-left: .5rem;
-    color: rgb(177, 195, 212);
 }
 
 
@@ -226,4 +216,45 @@ section > .header > .count {
 }
 #aside .icon > [class^="material-icons"] {
     font-size: 1.75rem;
+}
+
+
+
+/* main */
+
+#main {
+    margin: .5rem 1rem 4rem 1rem;
+}
+section > .header {
+    margin: 1rem 0 .75rem 0;
+	height: 3rem;
+    display: flex;
+    align-items: center;
+}
+section > .header > .count {
+    font-size: 1rem;
+    margin-left: .5rem;
+    color: rgb(177, 195, 212);
+}
+
+
+
+/* my profile */
+
+#my_profile > .user-item {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+}
+#my_profile > .user-item > .img > [class^="material-icons"] {
+    font-size: 2.5rem;
+    display: block;
+    color: #70b3ec;
+    margin-left: -.125rem;
+}
+#my_profile > .user-item > .name {
+    flex: 1;
+    margin-left: .5rem;
+    font-size: 1.125rem;
 }

@@ -2,21 +2,24 @@
 
 
 
-#my_groups .header > .share_location_all-button {
+#my_groups {
+    margin-top: .5rem;
+    border-top: 1px solid rgba(177, 195, 212, .25);
+}
+.share_location_all-button {
     margin-left: auto;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding: .75rem;
-    padding-right: 0;
+    height: 100%;
 }
-#my_groups .header > .share_location_all-button [class^="material-icons"] {
+.share_location_all-button [class^="material-icons"] {
     color: rgb(177, 195, 212);
     font-size: 1.5rem;
 }
-#my_groups .header > .share_location_all-button > p {
+.share_location_all-button > p {
     color: rgb(177, 195, 212);
-    margin-right: .25rem;
+    margin-right: .375rem;
     font-size: .875rem;
 }
 
@@ -32,7 +35,7 @@
 #my_groups .group-item {
     /*width: 10rem;*/
     height: 12rem;
-    background-color: lightgray;
+    background-color: rgb(19, 20, 21);
     border-radius: .5rem;
 
     display: flex;
@@ -46,6 +49,7 @@
 #my_groups .group-item > .name {
     padding: 1rem;
     font-size: 1.25rem;
+    line-height: 140%;
 }
 #my_groups .group-item > .description {
     display: flex;
