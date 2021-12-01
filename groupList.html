@@ -44,23 +44,44 @@
             <p id="group-count">그룹 3</p>
             <!-- https://picsum.photos/480/480.jpg?blur=5 -->
             <ul class="group-list">
-                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resrc/group_image/1.jpg);">
+                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/1.jpg);">
                     <p class="name">4시까지 안오면 디짐</p>
-                    <p class="num_of_members">5명</p>
-                    <label><input type="checkbox">위치 공유</label>
-                    <!--<img alt="A background image of a group item" src="resrc/group_img/1.jpg">-->
+                    <div class="description">
+                        <div class="num_of_members">
+                            <span class="material-icons">account_circle</span>
+                            <p>5명</p>
+                        </div>
+                        <button class="share_location-button">
+                            <span class="material-icons-outlined">toggle_on</span>
+                            <p>ON</p>
+                        </button>
+                    </div>
                 </li>
-                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resrc/group_image/2.jpg);">
+                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/2.jpg);">
                     <p class="name">여.은.파</p>
-                    <p class="num_of_members">2명</p>
-                    <label><input type="checkbox">위치 공유</label>
-                    <!--<img alt="A background image of a group item" src="resrc/group_img/2.jpg">-->
+                    <div class="description">
+                        <div class="num_of_members">
+                            <span class="material-icons">account_circle</span>
+                            <p>2명</p>
+                        </div>
+                        <button class="share_location-button">
+                            <span class="material-icons-outlined">toggle_on</span>
+                            <p>ON</p>
+                        </button>
+                    </div>
                 </li>
-                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resrc/group_image/3.jpg);">
+                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/3.jpg);">
                     <p class="name">틀딱쉐리덜,,,</p>
-                    <p class="num_of_members">3명</p>
-                    <label><input type="checkbox">위치 공유</label>
-                    <!--<img alt="A background image of a group item" src="resrc/group_img/3.jpg">-->
+                    <div class="description">
+                        <div class="num_of_members">
+                            <span class="material-icons">account_circle</span>
+                            <p>3명</p>
+                        </div>
+                        <button class="share_location-button disabled">
+                            <span class="material-icons-outlined">toggle_off</span>
+                            <p>OFF</p>
+                        </button>
+                    </div>
                 </li>
             </ul>
         </div>

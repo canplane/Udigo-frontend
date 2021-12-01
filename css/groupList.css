@@ -58,7 +58,7 @@
     grid-column-gap: 1rem;
 }
 
-.group-list > .group-item {
+.group-item {
     /*width: 10rem;*/
     height: 12rem;
     background-color: lightgray;
@@ -68,14 +68,53 @@
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 1rem;
-
+    color: #fff;
     background-size: cover;
     background-position: center;
 }
-.group-list > .group-item > .name {
+.group-item > .name {
+    padding: 1rem;
     font-size: 1.25rem;
 }
+.group-item > .description {
+    display: flex;
+    flex-direction: row;
+}
+.group-item > .description > * {
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+}
+
+.group-item > .description .num_of_members > [class^="material-icons"] {
+    color: #fff;
+    font-size: 1.125rem;
+}
+.group-item > .description .num_of_members > p {
+    margin-left: .25rem;
+    font-size: .875rem;
+}
+.group-item > .description .share_location-button {
+    flex: 1;
+    flex-direction: row-reverse;
+}
+.group-item > .description .share_location-button > [class^="material-icons"] {
+    color: #81c784;
+    font-size: 1.5rem;
+}
+.group-item > .description .share_location-button.disabled > [class^="material-icons"] {
+    color: #e57373;
+}
+.group-item > .description .share_location-button > p {
+    margin-right: .25rem;
+    font-size: .875rem;
+    font-weight: bold;
+    color: #81c784;
+}
+.group-item > .description .share_location-button.disabled > p {
+    color: #e57373;
+}
+
 
 #group-count {
     padding: 1rem 0 .5rem 0;
@@ -150,7 +189,7 @@
 
     display: flex;
     background-color: rgba(24, 34, 45, .375);
-    border-top: 1px solid rgba(177, 195, 212, .375);
+    border-top: 1px solid rgba(177, 195, 212, .25);
 
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);

@@ -31,7 +31,7 @@
 #navbar .icon.icon-noti {
     position: relative;
 }
-#navbar .icon.icon-noti:after {
+#navbar .icon.icon-noti::after {
     content: "";
     display: block;
     width: .375rem;
@@ -117,7 +117,7 @@
 
     display: flex;
     background-color: rgba(24, 34, 45, .375);
-    border-top: 1px solid rgba(177, 195, 212, .375);
+    border-top: 1px solid rgba(177, 195, 212, .25);
 
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
