@@ -25,7 +25,7 @@
     color: rgb(177, 195, 212);
 }
 #navbar .icon > [class^="material-icons"] {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
 }
 
 #navbar .icon.icon-noti {
@@ -40,8 +40,8 @@
     background-color: #fd3333;
 
     position: absolute;
-    top: .675rem;
-    right: .375rem;
+    top: .75rem;
+    right: .5rem;
 }
 
 
@@ -57,26 +57,25 @@
 
 #my_profile > .user-item {
     display: flex;
-    height: 5rem;
+    height: 4rem;
     width: 100%;
     align-items: center;
 }
 #my_profile > .user-item > .img > [class^="material-icons"] {
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: block;
     color: #70b3ec;
-    margin-left: -.25rem;
+    margin-left: -.125rem;
 }
 #my_profile > .user-item > .name {
     flex: 1;
-
-    margin-left: 0.75rem;
-    font-size: 1.25rem;
+    margin-left: .625rem;
+    font-size: 1.125rem;
 }
 
 #friend-count {
     padding: 1rem 0 .5rem 0;
-    font-size: .875rem;
+    font-size: .75rem;
     color: rgb(177, 195, 212);
 }
 
@@ -86,19 +85,19 @@
 }
 .friend-list > .user-item {
     display: flex;
-    height: 3.5rem;
+    height: 3rem;
     align-items: center;
 }
 .friend-list > .user-item > .img > [class^="material-icons"] {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     display: block;
     color: #70b3ec;
-    margin-left: -.25rem;
+    margin-left: -.125rem;
 }
 .friend-list > .user-item > .name {
     flex: 1;
-    margin-left: 0.75rem;
-    font-size: 1.125rem;
+    margin-left: .625rem;
+    font-size: 1rem;
     font-style: bold;
 }
 
@@ -131,7 +130,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 3.5rem;
+    height: 3rem;
 
     color: rgb(177, 195, 212);
 }
@@ -139,5 +138,5 @@
     color: #70b3ec;
 }
 #aside .icon > [class^="material-icons"] {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
