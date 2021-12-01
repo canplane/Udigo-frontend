@@ -9,7 +9,7 @@
     
     <!-- open graph -->
     <meta name="title" property="og:title" content="Udigo">
-    <meta name="images" property="og:image" content="./resrc/thumb.jpg">
+    <meta name="images" property="og:image" content="./resrc/op-image.jpg">
     <meta name="description" property="og:description" content="위치 공유 소셜 미디어">
     <meta name="type" property="og:type" content="article">
 
@@ -17,61 +17,75 @@
     <!--<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/friendList.css">
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <ul>
-            <li><a href="#">Notification</a></li>
-            <li><a href="#">Search User</a></li>
-            <li><a href="#">Add a friend</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><!-- Notifications -->
+                <a class="icon" href="#"><span class="material-icons">notifications</span></a>
+            </li>
+            <li><!-- Search User -->
+                <a class="icon" href="#"><span class="material-icons">search</span></a>
+            </li>
+            <li><!-- Add a friend -->
+                <a class="icon" href="#"><span class="material-icons">person_add</span></a>
+            </li>
+            <li><!-- Settings -->
+                <a class="icon" href="#"><span class="material-icons">settings</span></a>
+            </li>
         </ul>
     </nav>
-
-    <div id="my_profile">
+    <div class="my_profile">
         <div class="user-item">
             <div class="img">
                 <span class="material-icons">account_circle</span>
             </div>
-            <p class="name">Lorem</p>
+            <p class="name">원채련</p>
         </div>
     </div>
-    <div id="my_friends">
-        <p id="friend_count">친구 14</p>
+    <div class="my_friends">
+        <p class="friend_count">친구 14</p>
         <div id="friend_lists">
             <div class="user-item">
                 <div class="img">
                     <span class="material-icons">account_circle</span>
                 </div>
-                <p class="name">Ipsum</p>
+                <p class="name">박혜림</p>
             </div>
             <div class="user-item">
                 <div class="img">
                     <span class="material-icons">account_circle</span>
                 </div>
-                <p class="name">Dolor</p>
+                <p class="name">위지훈</p>
             </div>
             <div class="user-item">
                 <div class="img">
                     <span class="material-icons">account_circle</span>
                 </div>
-                <p class="name">Sit</p>
+                <p class="name">이상훈</p>
             </div>
             <div class="user-item">
                 <div class="img">
                     <span class="material-icons">account_circle</span>
                 </div>
-                <p class="name">Amet</p>
+                <p class="name">조시호</p>
             </div>
         </div>
     </div>
 
-    <footer>
-        <div>Friend Tab</div>
-        <div>Group Tab</div>
-    </footer>
+    <aside class="aside">
+        <ul>
+            <li><!-- Friend Tab -->
+                <a class="icon" href="#"><span class="material-icons">contacts</span></a>
+            </li>
+            <li><!-- Group Tab -->
+                <a class="icon" href="#"><span class="material-icons">groups</span></a>
+            </li>
+        </ul>
+    </aside>
 
     <!-- libraries -->
     <!--<script src="lib/jquery-3.4.1.min.js"></script>
