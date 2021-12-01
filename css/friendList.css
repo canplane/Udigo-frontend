@@ -33,6 +33,6 @@
 }
 #my_friends .user-item > .name {
     flex: 1;
-    margin-left: .625rem;
+    margin-left: .5rem;
     font-size: 1rem;
 }

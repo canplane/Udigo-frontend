@@ -262,17 +262,23 @@ section > .header > .count {
 #my_profile > .user-item {
     display: flex;
     height: 4rem;
-    width: 100%;
     align-items: center;
 }
-#my_profile > .user-item > .img > [class^="material-icons"] {
-    font-size: 2.5rem;
+#my_profile > .user-item > .image > [class^="material-icons"] {
+    font-size: 3rem;
     display: block;
     color: #70b3ec;
-    margin-left: -.125rem;
+    margin-left: -.25rem;
 }
-#my_profile > .user-item > .name {
+#my_profile > .user-item > .text {
     flex: 1;
-    margin-left: .625rem;
+    margin-left: .5rem;
+}
+#my_profile > .user-item > .text > .name {
     font-size: 1.125rem;
+    margin-bottom: .125rem;
+}
+#my_profile > .user-item > .text > .id {
+    font-size: .75rem;
+    color: rgb(177, 195, 212);
 }

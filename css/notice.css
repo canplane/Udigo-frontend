@@ -8,15 +8,21 @@
 }
 #my_notices .notice-item {
     display: flex;
-    height: 4rem;
+    height: 5rem;
     align-items: center;
 }
 #my_notices .notice-item > .icon {
     margin-left: -.625rem;
 }
-#my_notices .notice-item > .message {
+#my_notices .notice-item > .text {
     flex: 1;
-    margin-left: .625rem;
+    margin-left: .5rem;
+}
+#my_notices .notice-item > .text > .message {
     font-size: 1rem;
-    font-style: bold;
+    margin-bottom: .125rem;
+}
+#my_notices .notice-item > .text > .time {
+    font-size: .75rem;
+    color: rgb(177, 195, 212);
 }
