@@ -2,63 +2,34 @@
 
 
 
-/* navbar */
-
-#navbar {
-    padding: 0 .25rem;
-}
-#navbar > ul {
-    margin: 0;
-    padding: .5rem 0;
-    display: flex;
-}
-#navbar > ul > li:first-child {
-    margin-right: auto;
-}
-#navbar .icon {
+#my_groups .header > .share_location_all-button {
+    margin-left: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-
-    color: rgb(177, 195, 212);
+    flex-direction: row-reverse;
+    padding: .75rem;
+    padding-right: 0;
 }
-#navbar .icon > [class^="material-icons"] {
+#my_groups .header > .share_location_all-button [class^="material-icons"] {
+    color: rgb(177, 195, 212);
     font-size: 1.5rem;
 }
-
-#navbar .icon.icon-noti {
-    position: relative;
-}
-#navbar .icon.icon-noti:after {
-    content: "";
-    display: block;
-    width: .375rem;
-    height: .375rem;
-    border-radius: 100%;
-    background-color: #fd3333;
-
-    position: absolute;
-    top: .75rem;
-    right: .5rem;
+#my_groups .header > .share_location_all-button > p {
+    color: rgb(177, 195, 212);
+    margin-right: .25rem;
+    font-size: .875rem;
 }
 
 
 
-/* main */
-
-.group-list {
-    margin: .5rem 0;
-
+#my_groups .group-item-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     grid-row-gap: 1.5rem;
     grid-column-gap: 1rem;
 }
-
-.group-item {
+#my_groups .group-item {
     /*width: 10rem;*/
     height: 12rem;
     background-color: lightgray;
@@ -72,143 +43,44 @@
     background-size: cover;
     background-position: center;
 }
-.group-item > .name {
+#my_groups .group-item > .name {
     padding: 1rem;
     font-size: 1.25rem;
 }
-.group-item > .description {
+#my_groups .group-item > .description {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
-.group-item > .description > * {
+#my_groups .group-item > .description > * {
     padding: .75rem;
     display: flex;
     align-items: center;
 }
-
-.group-item > .description .num_of_members > [class^="material-icons"] {
+#my_groups .group-item > .description .num_of_members > [class^="material-icons"] {
     color: #fff;
     font-size: 1.125rem;
 }
-.group-item > .description .num_of_members > p {
+#my_groups .group-item > .description .num_of_members > p {
     margin-left: .25rem;
     font-size: .875rem;
 }
-.group-item > .description .share_location-button {
-    flex: 1;
+#my_groups .group-item > .description .share_location-button {
     flex-direction: row-reverse;
 }
-.group-item > .description .share_location-button > [class^="material-icons"] {
+#my_groups .group-item > .description .share_location-button > [class^="material-icons"] {
     color: #81c784;
     font-size: 1.5rem;
 }
-.group-item > .description .share_location-button.disabled > [class^="material-icons"] {
-    color: #e57373;
-}
-.group-item > .description .share_location-button > p {
+#my_groups .group-item > .description .share_location-button > p {
+    color: #81c784;
     margin-right: .25rem;
     font-size: .875rem;
     font-weight: bold;
-    color: #81c784;
 }
-.group-item > .description .share_location-button.disabled > p {
+#my_groups .group-item > .description .share_location-button.disabled > [class^="material-icons"] {
     color: #e57373;
 }
-
-
-#group-count {
-    padding: 1rem 0 .5rem 0;
-    font-size: .75rem;
-    color: rgb(177, 195, 212);
-}
-
-
-
-#main {
-    padding: 0 1rem;
-}
-#main > h2 {
-    padding: 1rem 0 .5rem 0;
-}
-
-#my_profile > .user-item {
-    display: flex;
-    height: 4rem;
-    width: 100%;
-    align-items: center;
-}
-#my_profile > .user-item > .img > [class^="material-icons"] {
-    font-size: 2.5rem;
-    display: block;
-    color: #70b3ec;
-    margin-left: -.125rem;
-}
-#my_profile > .user-item > .name {
-    flex: 1;
-    margin-left: .625rem;
-    font-size: 1.125rem;
-}
-
-
-
-.friend-list {
-    display: flex;
-    flex-direction: column;
-}
-.friend-list > .user-item {
-    display: flex;
-    height: 3rem;
-    align-items: center;
-}
-.friend-list > .user-item > .img > [class^="material-icons"] {
-    font-size: 2.25rem;
-    display: block;
-    color: #70b3ec;
-    margin-left: -.125rem;
-}
-.friend-list > .user-item > .name {
-    flex: 1;
-    margin-left: .625rem;
-    font-size: 1rem;
-    font-style: bold;
-}
-
-
-
-/* aside */
-
-#aside {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-#aside > ul {
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    background-color: rgba(24, 34, 45, .375);
-    border-top: 1px solid rgba(177, 195, 212, .25);
-
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-}
-#aside > ul > li {
-    flex: 1;
-}
-#aside .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 3rem;
-
-    color: rgb(177, 195, 212);
-}
-#aside .icon.active {
-    color: #70b3ec;
-}
-#aside .icon > [class^="material-icons"] {
-    font-size: 1.75rem;
+#my_groups .group-item > .description .share_location-button.disabled > p {
+    color: #e57373;
 }

@@ -39,52 +39,59 @@
     </nav>
 
     <main id="main">
-        <h2>내가 참여한 그룹</h2>
-        <div>
-            <p id="group-count">그룹 3</p>
-            <!-- https://picsum.photos/480/480.jpg?blur=5 -->
-            <ul class="group-list">
-                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/1.jpg);">
-                    <p class="name">4시까지 안오면 디짐</p>
-                    <div class="description">
-                        <div class="num_of_members">
-                            <span class="material-icons">account_circle</span>
-                            <p>5명</p>
+        <section id="my_groups">
+            <header class="header">
+                <h2>내가 참여한 그룹</h2>
+                <p class="count">3</p>
+                <div class="share_location_all-button">
+                    <span class="material-icons-outlined">toggle_off</span>
+                    <p>전체 공유</p>
+                </div>
+            </header>
+            <article>
+                <ul class="group-item-container">
+                    <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/1.jpg);">
+                        <p class="name">4시까지 안오면 디짐</p>
+                        <div class="description">
+                            <div class="num_of_members">
+                                <span class="material-icons">account_circle</span>
+                                <p>5명</p>
+                            </div>
+                            <button class="share_location-button">
+                                <span class="material-icons-outlined">toggle_on</span>
+                                <p>ON</p>
+                            </button>
                         </div>
-                        <button class="share_location-button">
-                            <span class="material-icons-outlined">toggle_on</span>
-                            <p>ON</p>
-                        </button>
-                    </div>
-                </li>
-                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/2.jpg);">
-                    <p class="name">여.은.파</p>
-                    <div class="description">
-                        <div class="num_of_members">
-                            <span class="material-icons">account_circle</span>
-                            <p>2명</p>
+                    </li>
+                    <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/2.jpg);">
+                        <p class="name">여.은.파</p>
+                        <div class="description">
+                            <div class="num_of_members">
+                                <span class="material-icons">account_circle</span>
+                                <p>2명</p>
+                            </div>
+                            <button class="share_location-button">
+                                <span class="material-icons-outlined">toggle_on</span>
+                                <p>ON</p>
+                            </button>
                         </div>
-                        <button class="share_location-button">
-                            <span class="material-icons-outlined">toggle_on</span>
-                            <p>ON</p>
-                        </button>
-                    </div>
-                </li>
-                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/3.jpg);">
-                    <p class="name">틀딱쉐리덜,,,</p>
-                    <div class="description">
-                        <div class="num_of_members">
-                            <span class="material-icons">account_circle</span>
-                            <p>3명</p>
+                    </li>
+                    <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(resrc/group_image/3.jpg);">
+                        <p class="name">틀딱쉐리덜,,,</p>
+                        <div class="description">
+                            <div class="num_of_members">
+                                <span class="material-icons">account_circle</span>
+                                <p>3명</p>
+                            </div>
+                            <button class="share_location-button disabled">
+                                <span class="material-icons-outlined">toggle_off</span>
+                                <p>OFF</p>
+                            </button>
                         </div>
-                        <button class="share_location-button disabled">
-                            <span class="material-icons-outlined">toggle_off</span>
-                            <p>OFF</p>
-                        </button>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
     </main>
 
     <aside id="aside">

@@ -2,59 +2,6 @@
 
 
 
-/* navbar */
-
-#navbar {
-    padding: 0 .25rem;
-}
-#navbar > ul {
-    margin: 0;
-    padding: .5rem 0;
-    display: flex;
-}
-#navbar > ul > li:first-child {
-    margin-right: auto;
-}
-#navbar .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-
-    color: rgb(177, 195, 212);
-}
-#navbar .icon > [class^="material-icons"] {
-    font-size: 1.5rem;
-}
-
-#navbar .icon.icon-noti {
-    position: relative;
-}
-#navbar .icon.icon-noti::after {
-    content: "";
-    display: block;
-    width: .375rem;
-    height: .375rem;
-    border-radius: 100%;
-    background-color: #fd3333;
-
-    position: absolute;
-    top: .75rem;
-    right: .5rem;
-}
-
-
-
-/* main */
-
-#main {
-    padding: 0 1rem;
-}
-#main > h2 {
-    padding: 1rem 0 .5rem 0;
-}
-
 #my_profile > .user-item {
     display: flex;
     height: 4rem;
@@ -69,74 +16,34 @@
 }
 #my_profile > .user-item > .name {
     flex: 1;
-    margin-left: .625rem;
+    margin-left: .5rem;
     font-size: 1.125rem;
 }
 
-#friend-count {
-    padding: 1rem 0 .5rem 0;
-    font-size: .75rem;
-    color: rgb(177, 195, 212);
-}
 
-.friend-list {
+
+#my_friends {
+    margin-top: .5rem;
+    border-top: 1px solid rgba(177, 195, 212, .25);
+}
+#my_friends .user-item-container {
     display: flex;
     flex-direction: column;
 }
-.friend-list > .user-item {
+#my_friends .user-item {
     display: flex;
     height: 3rem;
     align-items: center;
 }
-.friend-list > .user-item > .img > [class^="material-icons"] {
+#my_friends .user-item > .img > [class^="material-icons"] {
     font-size: 2.25rem;
     display: block;
     color: #70b3ec;
     margin-left: -.125rem;
 }
-.friend-list > .user-item > .name {
+#my_friends .user-item > .name {
     flex: 1;
     margin-left: .625rem;
     font-size: 1rem;
     font-style: bold;
-}
-
-
-
-/* aside */
-
-#aside {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-#aside > ul {
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    background-color: rgba(24, 34, 45, .375);
-    border-top: 1px solid rgba(177, 195, 212, .25);
-
-    backdrop-filter: blur(1rem);
-    -webkit-backdrop-filter: blur(1rem);
-}
-#aside > ul > li {
-    flex: 1;
-}
-#aside .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 3rem;
-
-    color: rgb(177, 195, 212);
-}
-#aside .icon.active {
-    color: #70b3ec;
-}
-#aside .icon > [class^="material-icons"] {
-    font-size: 1.75rem;
 }
