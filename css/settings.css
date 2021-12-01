@@ -55,13 +55,14 @@ section {
     flex: 1;
     margin-left: .5rem;
 }
-#settings-my_profile > .text > * {
-    margin-bottom: .125rem;
-}
 #settings-my_profile > .text > .name {
     font-size: 1.125rem;
 }
-#settings-my_profile > .text > .id,
+#settings-my_profile > .text > .id {
+    font-size: .75rem;
+    color: rgb(177, 195, 212);
+    margin-bottom: .25rem;
+}
 #settings-my_profile > .text > .social_account {
     font-size: .75rem;
     color: rgb(177, 195, 212);
