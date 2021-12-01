@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.user-item {
+    display: flex;
+    height: 64px;
+    width: 100%;
+    align-items: center;
+}
+.user-item > .img > .material-icons {
+    font-size: 36pt;
+    display: block;
+}
+.user-item > .name {
+    margin-left: 12px;
+    font-size: 16pt;
+}
