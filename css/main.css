@@ -9,62 +9,62 @@
 	font-weight: 45 920;
 	font-style: normal;
 	font-display: swap;
-	src: local('Pretendard Variable'), url('../assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+	src: local('Pretendard Variable'), url('../resrc/font/PretendardVariable.woff2') format('woff2-variations');
 }
 
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 900;
 	font-display: swap;
-	src: local('Pretendard Black'), url('../assets/fonts/Pretendard-Black.woff') format('woff');
+	src: local('Pretendard Black'), url('../resrc/font/Pretendard-Black.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 800;
 	font-display: swap;
-	src: local('Pretendard ExtraBold'), url('../assets/fonts/Pretendard-ExtraBold.woff') format('woff');
+	src: local('Pretendard ExtraBold'), url('../resrc/font/Pretendard-ExtraBold.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 700;
 	font-display: swap;
-	src: local('Pretendard Bold'), url('../assets/fonts/Pretendard-Bold.woff') format('woff');
+	src: local('Pretendard Bold'), url('../resrc/font/Pretendard-Bold.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 600;
 	font-display: swap;
-	src: local('Pretendard SemiBold'), url('../assets/fonts/Pretendard-SemiBold.woff') format('woff');
+	src: local('Pretendard SemiBold'), url('../resrc/font/Pretendard-SemiBold.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 500;
 	font-display: swap;
-	src: local('Pretendard Medium'), url('../assets/fonts/Pretendard-Medium.woff') format('woff');
+	src: local('Pretendard Medium'), url('../resrc/font/Pretendard-Medium.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 400;
 	font-display: swap;
-	src: local('Pretendard Regular'), url('../assets/fonts/Pretendard-Regular.woff') format('woff');
+	src: local('Pretendard Regular'), url('../resrc/font/Pretendard-Regular.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 300;
 	font-display: swap;
-	src: local('Pretendard Light'), url('../assets/fonts/Pretendard-Light.woff') format('woff');
+	src: local('Pretendard Light'), url('../resrc/font/Pretendard-Light.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 200;
 	font-display: swap;
-	src: local('Pretendard ExtraLight'), url('../assets/fonts/Pretendard-ExtraLight.woff') format('woff');
+	src: local('Pretendard ExtraLight'), url('../resrc/font/Pretendard-ExtraLight.woff') format('woff');
 }
 @font-face {
 	font-family: 'Pretendard';
 	font-weight: 100;
 	font-display: swap;
-	src: local('Pretendard Thin'), url('../assets/fonts/Pretendard-Thin.woff') format('woff');
+	src: local('Pretendard Thin'), url('../resrc/font/Pretendard-Thin.woff') format('woff');
 }
 
 
@@ -84,4 +84,24 @@ body {
         Apple Color Emoji, Segoe UI Emoji !important;
     
     background-color: #ffffff;
+    font-size: 16px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

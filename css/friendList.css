@@ -2,51 +2,126 @@
 
 
 
-.navbar > ul {
+/* navbar */
+
+#navbar {
+    padding: 0 .25rem;
+}
+#navbar > ul {
     margin: 0;
-    padding: 0;
-    list-style: none;
+    padding: .5rem 0;
     display: flex;
 }
-.navbar > ul > li:first-child {
+#navbar > ul > li:first-child {
     margin-right: auto;
 }
-.navbar .icon {
+#navbar .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 3rem;
     height: 3rem;
 
-    color: #373737;
-    text-decoration: none;
+    color: #373737;   
 }
-.navbar .icon .material-icons {
-    font-size: 1.75rem;
+#navbar .icon .material-icons {
+    font-size: 2rem;
+}
+
+#navbar .icon.icon-noti {
+    position: relative;
+}
+#navbar .icon.icon-noti:after {
+    content: "";
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+    background-color: #fd3333;
+
+    position: absolute;
+    top: .5rem;
+    right: .25rem;
 }
 
 
 
-.aside {
+/* main */
+
+#main {
+    padding: 0 1rem;
+}
+#main > h1 {
+    padding: 1rem 0 .5rem 0;
+}
+
+#my_profile > .user-item {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+}
+#my_profile > .user-item > .img > .material-icons {
+    font-size: 4rem;
+    display: block;
+    color: #70b3ec;
+    margin-left: -.35rem;
+}
+#my_profile > .user-item > .name {
+    flex: 1;
+
+    margin-left: 0.75rem;
+    font-size: 1.375rem;
+}
+
+#friend_count {
+    padding: 1rem 0 .5rem 0;
+    font-size: 1rem;
+}
+
+.friend_list {
+    display: flex;
+    flex-direction: column;
+}
+.friend_list > .user-item {
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+}
+.friend_list > .user-item > .img > .material-icons {
+    font-size: 3rem;
+    display: block;
+    color: #70b3ec;
+    margin-left: -.25rem;
+}
+.friend_list > .user-item > .name {
+    flex: 1;
+    margin-left: 0.75rem;
+    font-size: 1.25rem;
+    font-style: bold;
+}
+
+
+
+/* aside */
+
+#aside {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
-.aside > ul {
+#aside > ul {
     margin: 0;
     padding: 0;
-    list-style: none;
 
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
     background-color: #70b3ec;
 }
-.aside > ul > li {
+#aside > ul > li {
     flex: 1;
 }
-.aside .icon {
+#aside .icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,35 +129,7 @@
     height: 4rem;
 
     color: #fff;
-    text-decoration: none;
 }
-.aside .icon .material-icons {
+#aside .icon .material-icons {
     font-size: 2.5rem;
 }
-
-
-
-
-.user-item {
-    display: flex;
-    height: 3rem;
-    width: 100%;
-    align-items: center;
-}
-.user-item > .img > .material-icons {
-    font-size: 2.5rem;
-    display: block;
-    color: #70b3ec;
-}
-.user-item > .name {
-    margin-left: 0.75rem;
-    font-size: 1.125rem;
-}
-
-
-
-/*
-#my_profile, #my_friends {
-    border-top: 1px solid lightgray;
-}
- */
