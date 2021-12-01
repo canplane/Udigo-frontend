@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 	color: #fff;
+	line-height: 140%;
 }
 
 [class^="material-icons"] {
@@ -128,44 +129,23 @@ button {
 
 /* MainView */
 
-/* navbar */
-
-#navbar {
-    padding: 0 .25rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-}
-#navbar > .brand {
-	height: 1.625rem;
-	margin: 0 .75rem;
-}
-
-#navbar > ul {
-    margin: 0;
-    padding: .5rem 0;
-    display: flex;
-}
-/*#navbar > ul > li:first-child {
-    margin-right: auto;
-}*/
-#navbar .icon {
+.icon {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 3rem;
     height: 3rem;
 }
-#navbar .icon > [class^="material-icons"] {
-    font-size: 1.5rem;
+.icon > [class^="material-icons"] {
 	color: rgb(177, 195, 212);
+    font-size: 1.5rem;
 }
 
-#navbar .icon.icon-noti {
+.icon.icon-badge {
     position: relative;
 }
-#navbar .icon.icon-noti::after {
+.icon.icon-badge.new::after,
+#my_notices .notice-item.new .icon::after {
     content: "";
     display: block;
     width: .375rem;
@@ -177,6 +157,48 @@ button {
     top: .75rem;
     right: .5rem;
 }
+
+
+
+/* navbar */
+
+#navbar {
+	height: 4rem;
+    margin: 0 .25rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#navbar > .brand {
+	height: 1.625rem;
+	margin: 0 .75rem;
+}
+#navbar > ul {
+    margin: 0;
+    display: flex;
+}
+
+
+
+#navbar-back {
+	position: relative;
+    margin: 0 .25rem;
+	height: 4rem;
+}
+#navbar-back > * {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+}
+#navbar-back h3 {
+	justify-content: center;
+}
+#navbar-back .back-button {
+	position: absolute;
+	left: 0;
+	height: 4rem;
+}
+
 
 
 
@@ -202,16 +224,12 @@ button {
 #aside > ul > li {
     flex: 1;
 }
+
 #aside .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    height: 3rem;
 }
 #aside .icon > [class^="material-icons"] {
-	color: rgb(177, 195, 212);
-    font-size: 1.75rem;
+	font-size: 1.75rem;
 }
 #aside .icon.active > [class^="material-icons"] {
 	color: #70b3ec;
@@ -255,6 +273,6 @@ section > .header > .count {
 }
 #my_profile > .user-item > .name {
     flex: 1;
-    margin-left: .5rem;
+    margin-left: .625rem;
     font-size: 1.125rem;
 }

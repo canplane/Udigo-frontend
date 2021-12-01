@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+
+#my_notices .notice-item-container {
+    display: flex;
+    flex-direction: column;
+}
+#my_notices .notice-item {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+}
+#my_notices .notice-item > .icon {
+    margin-left: -.625rem;
+}
+#my_notices .notice-item > .message {
+    flex: 1;
+    margin-left: .625rem;
+    font-size: 1rem;
+    font-style: bold;
+}

@@ -13,17 +13,6 @@
     flex-direction: row-reverse;
     height: 100%;
 }
-.add_friend-button .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 3rem;
-    height: 3rem;
-}
-.add_friend-button .icon > [class^="material-icons"] {
-    font-size: 1.5rem;
-    color: rgb(177, 195, 212);
-}
 
 
 
@@ -46,5 +35,4 @@
     flex: 1;
     margin-left: .625rem;
     font-size: 1rem;
-    font-style: bold;
 }

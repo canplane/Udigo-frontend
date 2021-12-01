@@ -49,7 +49,6 @@
 #my_groups .group-item > .name {
     padding: 1rem;
     font-size: 1.25rem;
-    line-height: 140%;
 }
 #my_groups .group-item > .description {
     display: flex;
