@@ -14,8 +14,7 @@
     <meta name="type" property="og:type" content="article">
 
     <!-- libraries -->
-    <!--<link rel="stylesheet" href="lib/bootstrap-4.4.1/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/groupList.css">
@@ -40,24 +39,24 @@
     </nav>
 
     <main id="main">
-        <h1>내가 참여한 그룹</h1>
+        <h2>내가 참여한 그룹</h2>
         <div>
             <p id="group-count">그룹 3</p>
             <!-- https://picsum.photos/480/480.jpg?blur=5 -->
             <ul class="group-list">
-                <li class="group-item">
+                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resrc/group_image/1.jpg);">
                     <p class="name">4시까지 안오면 디짐</p>
                     <p class="num_of_members">5명</p>
                     <label><input type="checkbox">위치 공유</label>
                     <!--<img alt="A background image of a group item" src="resrc/group_img/1.jpg">-->
                 </li>
-                <li class="group-item">
+                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resrc/group_image/2.jpg);">
                     <p class="name">여.은.파</p>
                     <p class="num_of_members">2명</p>
                     <label><input type="checkbox">위치 공유</label>
                     <!--<img alt="A background image of a group item" src="resrc/group_img/2.jpg">-->
                 </li>
-                <li class="group-item">
+                <li class="group-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(resrc/group_image/3.jpg);">
                     <p class="name">틀딱쉐리덜,,,</p>
                     <p class="num_of_members">3명</p>
                     <label><input type="checkbox">위치 공유</label>
@@ -70,24 +69,15 @@
     <aside id="aside">
         <ul>
             <li><!-- Friend Tab -->
-                <a class="icon" href="friendList.html"><span class="material-icons">contacts</span></a>
+                <a class="icon" href="friendList.html"><span class="material-icons-outlined">contacts</span></a>
             </li>
             <li><!-- Group Tab -->
-                <a class="icon" href="groupList.html"><span class="material-icons">groups</span></a>
+                <a class="icon active" href="groupList.html"><span class="material-icons">groups</span></a>
             </li>
         </ul>
     </aside>
 
     <!-- libraries -->
-    <!--<script src="lib/jquery-3.4.1.min.js"></script>
-    <script src="lib/popper-1.16.0/popper.min.js"></script>
-    <script src="lib/bootstrap-4.4.1/js/bootstrap.bundle.min.js"></script>-->
-
-    <!--<script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/component.js"></script>
-    <script type="text/javascript" src="js/chart.js"></script>
-    <script type="text/javascript" src="template.js"></script>-->
-
     <script type="text/javascript" src="js/groupList.js"></script>
 </body>
 
