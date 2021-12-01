@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/friendList.css">
+    <link rel="stylesheet" href="css/groupList.css">
 </head>
 
 <body>
@@ -40,41 +40,28 @@
     </nav>
 
     <main id="main">
-        <h1>친구</h1>
-        <div id="my_profile">
-            <div class="user-item">
-                <div class="img">
-                    <span class="material-icons">account_circle</span>
-                </div>
-                <p class="name">이상훈</p>
-            </div>
-        </div>
+        <h1>내가 참여한 그룹</h1>
         <div>
-            <p id="friend-count">친구 14</p>
-            <ul class="friend-list">
-                <li class="user-item">
-                    <div class="img">
-                        <span class="material-icons">account_circle</span>
-                    </div>
-                    <p class="name">박혜림</p>
+            <p id="group-count">그룹 3</p>
+            <!-- https://picsum.photos/480/480.jpg?blur=5 -->
+            <ul class="group-list">
+                <li class="group-item">
+                    <p class="name">4시까지 안오면 디짐</p>
+                    <p class="num_of_members">5명</p>
+                    <label><input type="checkbox">위치 공유</label>
+                    <!--<img alt="A background image of a group item" src="resrc/group_img/1.jpg">-->
                 </li>
-                <li class="user-item">
-                    <div class="img">
-                        <span class="material-icons">account_circle</span>
-                    </div>
-                    <p class="name">원채련</p>
+                <li class="group-item">
+                    <p class="name">여.은.파</p>
+                    <p class="num_of_members">2명</p>
+                    <label><input type="checkbox">위치 공유</label>
+                    <!--<img alt="A background image of a group item" src="resrc/group_img/2.jpg">-->
                 </li>
-                <li class="user-item">
-                    <div class="img">
-                        <span class="material-icons">account_circle</span>
-                    </div>
-                    <p class="name">위지훈</p>
-                </li>
-                <li class="user-item">
-                    <div class="img">
-                        <span class="material-icons">account_circle</span>
-                    </div>
-                    <p class="name">조시호</p>
+                <li class="group-item">
+                    <p class="name">틀딱쉐리덜,,,</p>
+                    <p class="num_of_members">3명</p>
+                    <label><input type="checkbox">위치 공유</label>
+                    <!--<img alt="A background image of a group item" src="resrc/group_img/3.jpg">-->
                 </li>
             </ul>
         </div>
@@ -101,7 +88,7 @@
     <script type="text/javascript" src="js/chart.js"></script>
     <script type="text/javascript" src="template.js"></script>-->
 
-    <script type="text/javascript" src="js/friendList.js"></script>
+    <script type="text/javascript" src="js/groupList.js"></script>
 </body>
 
 </html>
