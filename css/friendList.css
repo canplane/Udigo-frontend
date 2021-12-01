@@ -22,10 +22,10 @@
     width: 3rem;
     height: 3rem;
 
-    color: #373737;   
+    color: rgb(177, 195, 212);
 }
-#navbar .icon .material-icons {
-    font-size: 2rem;
+#navbar .icon > [class^="material-icons"] {
+    font-size: 1.625rem;
 }
 
 #navbar .icon.icon-noti {
@@ -34,14 +34,14 @@
 #navbar .icon.icon-noti:after {
     content: "";
     display: block;
-    width: .5rem;
-    height: .5rem;
+    width: .375rem;
+    height: .375rem;
     border-radius: 100%;
     background-color: #fd3333;
 
     position: absolute;
-    top: .5rem;
-    right: .25rem;
+    top: .675rem;
+    right: .375rem;
 }
 
 
@@ -51,7 +51,7 @@
 #main {
     padding: 0 1rem;
 }
-#main > h1 {
+#main > h2 {
     padding: 1rem 0 .5rem 0;
 }
 
@@ -61,22 +61,23 @@
     width: 100%;
     align-items: center;
 }
-#my_profile > .user-item > .img > .material-icons {
-    font-size: 4rem;
+#my_profile > .user-item > .img > [class^="material-icons"] {
+    font-size: 3rem;
     display: block;
     color: #70b3ec;
-    margin-left: -.35rem;
+    margin-left: -.25rem;
 }
 #my_profile > .user-item > .name {
     flex: 1;
 
     margin-left: 0.75rem;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
 }
 
 #friend-count {
     padding: 1rem 0 .5rem 0;
-    font-size: 1rem;
+    font-size: .875rem;
+    color: rgb(177, 195, 212);
 }
 
 .friend-list {
@@ -88,8 +89,8 @@
     height: 3.5rem;
     align-items: center;
 }
-.friend-list > .user-item > .img > .material-icons {
-    font-size: 3rem;
+.friend-list > .user-item > .img > [class^="material-icons"] {
+    font-size: 2.5rem;
     display: block;
     color: #70b3ec;
     margin-left: -.25rem;
@@ -97,7 +98,7 @@
 .friend-list > .user-item > .name {
     flex: 1;
     margin-left: 0.75rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-style: bold;
 }
 
@@ -116,7 +117,11 @@
     padding: 0;
 
     display: flex;
-    background-color: #70b3ec;
+    background-color: rgba(24, 34, 45, .5);
+    border-top: 1px solid rgba(177, 195, 212, .375);
+
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
 }
 #aside > ul > li {
     flex: 1;
@@ -126,10 +131,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
 
-    color: #fff;
+    color: rgb(177, 195, 212);
 }
-#aside .icon .material-icons {
-    font-size: 2.5rem;
+#aside .icon.active {
+    color: #70b3ec;
+}
+#aside .icon > [class^="material-icons"] {
+    font-size: 2rem;
 }

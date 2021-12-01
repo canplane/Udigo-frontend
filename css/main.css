@@ -83,7 +83,7 @@ body {
         Helvetica Neue, Roboto, Helvetica, Noto Sans KR, Malgun Gothic, sans-serif,
         Apple Color Emoji, Segoe UI Emoji !important;
     
-    background-color: #ffffff;
+    background-color: rgb(24, 34, 45);
     font-size: 16px;
 }
 
@@ -91,6 +91,7 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+	color: white;
 }
 
 

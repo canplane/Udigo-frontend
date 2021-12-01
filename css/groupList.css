@@ -131,6 +131,9 @@
 
     display: flex;
     background-color: #70b3ec;
+
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
 }
 #aside > ul > li {
     flex: 1;
@@ -144,6 +147,7 @@
 
     color: #fff;
 }
-#aside .icon .material-icons {
+#aside .icon > .material-icons,
+#aside .icon > .material-icons-outlined {
     font-size: 2.5rem;
 }
