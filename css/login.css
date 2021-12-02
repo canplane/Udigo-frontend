@@ -14,8 +14,6 @@ main {
     align-items: center;
 }
 main > header {
-    margin-bottom: 2.5rem;
-
     width: 100%;
 }
 
@@ -27,13 +25,15 @@ main > header {
     width: 14rem;
 }
 
-form.login_type {
+form.login_type,
+.signup {
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-form.login_type > button {
+form.login_type > .button,
+.signup > .button {
     width: 14rem;
     border-radius: 4rem;
     height: 2.5rem;
@@ -41,14 +41,29 @@ form.login_type > button {
     font-weight: bold;
     margin-bottom: 1rem;
     letter-spacing: .125rem;
-}
-form.login_type > button.naver {
-    background-color: #2db400;
     color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-form.login_type > button.kakao {
+form.login_type > .button.naver {
+    background-color: #2db400;
+}
+form.login_type > .button.kakao {
     background-color: #f7e600;
     color: #3a1d1d;
+}
+
+
+
+/* unregistered */
+
+.signup > .yes {
+    background-color: rgb(30, 136, 229);
+}
+.signup > .no {
+    background-color: rgb(34, 48, 63);
 }
 
 
@@ -56,6 +71,8 @@ form.login_type > button.kakao {
 /* join */
 
 form.user_information {
+    margin-top: 2.5rem;
+
     display: flex;
     flex-direction: column;
     align-items: center;
