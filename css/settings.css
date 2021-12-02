@@ -67,6 +67,7 @@ section {
 }
 #settings-my_profile > .text > .social_account {
     font-size: .75rem;
+    font-weight: bold;
     color: rgb(177, 195, 212);
 }
 #settings-my_profile > .text > .social_account::before {
