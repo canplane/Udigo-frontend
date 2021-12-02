@@ -120,9 +120,11 @@ a {
 }
 
 button {
+    color: #fff;
 	background: none;
 	border: none;
 	padding: 0;
+    font-size: 1rem;
 }
 
 
@@ -204,13 +206,13 @@ button {
 
 /* aside */
 
-#aside {
+#footer {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
 }
-#aside > ul {
+#footer > ul {
     margin: 0;
     padding: 0;
 
@@ -221,17 +223,17 @@ button {
     backdrop-filter: blur(1rem);
     -webkit-backdrop-filter: blur(1rem);
 }
-#aside > ul > li {
+#footer > ul > li {
     flex: 1;
 }
 
-#aside .icon {
+#footer .icon {
     width: 100%;
 }
-#aside .icon > [class^="material-icons"] {
+#footer .icon > [class^="material-icons"] {
 	font-size: 1.75rem;
 }
-#aside .icon.active > [class^="material-icons"] {
+#footer .icon.active > [class^="material-icons"] {
 	color: #70b3ec;
 }
 
@@ -319,6 +321,13 @@ body.modal-open::after {
 
     z-index: 1000;
 }
+body #modal {
+    visibility: hidden;
+}
+body.modal-open #modal {
+    visibility: visible;
+}
+
 .modal-header {
     padding: 1rem;
     text-align: center;
@@ -342,12 +351,15 @@ body.modal-open::after {
 .modal-footer > li:not(:first-child) {
     border-left: 1px solid rgba(177, 195, 212, .25);
 }
-.modal-footer > li > .button {
+.modal-footer > li > button {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: .625rem;
+}
+.modal-footer > li > button:active {
+    color: #70b3ec;
 }
 
 
