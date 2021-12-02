@@ -301,6 +301,8 @@ section > .header > .header-right > * {
 
 body.modal-open {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 body.modal-open::after {
     content: "";
