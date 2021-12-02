@@ -1,3 +1,7 @@
+// temp
+document.querySelector("#navbar > .brand").addEventListener("click", () => { location.href = "policy.html"; });
+
+
 const $body = document.querySelector("body");
 const $modal = document.querySelector("#modal");
 

@@ -24,7 +24,7 @@ main > header {
 /* login */
 
 .brand > img {
-    width: 15rem;
+    width: 14rem;
 }
 
 form.login_type {
@@ -34,7 +34,7 @@ form.login_type {
     align-items: center;
 }
 form.login_type > button {
-    width: 16rem;
+    width: 14rem;
     border-radius: 4rem;
     height: 2.5rem;
     font-size: 1rem;
@@ -64,7 +64,7 @@ form.user_information input[type="submit"],
 form.spot_policy input[type="submit"] {
     margin-top: 3rem;
 
-    width: 16rem;
+    width: 14rem;
     border-radius: 4rem;
     height: 2.5rem;
     font-size: 1rem;
