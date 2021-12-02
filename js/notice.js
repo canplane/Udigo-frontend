@@ -5,17 +5,20 @@ const $notices = document.querySelectorAll(".notice-item");
 
 
 function modalAccept() {
-    $body.classList.remove('modal-open');
+    $body.classList.remove("modal-open");
+    $modal.className = "";
     $modal.innerHTML = "";
 }
 function modalDecline() {
-    $body.classList.remove('modal-open');
+    $body.classList.remove("modal-open");
+    $modal.className = "";
     $modal.innerHTML = "";
 }
 
 
-function noticeClickEvent() {
-    $body.classList.add('modal-open');
+function notice_clickEvent() {
+    $body.classList.add("modal-open");
+    $modal.classList.add("receive_friend_request");
     $modal.innerHTML = `
 <p class="modal-header">친구 요청을 수락하시겠습니까?</p>
 <div class="modal-body">
@@ -29,7 +32,6 @@ function noticeClickEvent() {
 <ul class="modal-footer">
     <li><button onclick="modalAccept()">승인</button></li>
     <li><button onclick="modalDecline()">거절</button></li>
-</ul>
-`
+</ul>`;
 }
-$notices[1].addEventListener("click", noticeClickEvent);
+$notices[1].addEventListener("click", notice_clickEvent);

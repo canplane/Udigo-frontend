@@ -88,7 +88,7 @@ body {
     height: 100%;
     width: 100%;
 
-    font-family: 'Pretendard Variable', 'Pretendard', 
+    font-family: 'Pretendard', 'Pretendard Variable', 
         -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, 
         Helvetica Neue, Roboto, Helvetica, Noto Sans KR, Malgun Gothic, sans-serif,
         Apple Color Emoji, Segoe UI Emoji !important;
@@ -344,7 +344,7 @@ body.modal-open #modal {
     font-size: 1.125rem;
 }
 .modal-body {
-    padding: .5rem 1rem;
+    padding: 0 1rem;
 }
 .modal-body > p {
     font-size: .875rem;
@@ -363,7 +363,7 @@ body.modal-open #modal {
     border-top: 1px solid rgba(177, 195, 212, .125);
 }
 .modal-footer > li:not(:first-child) {
-    border-left: 1px solid rgba(177, 195, 212, .25);
+    border-left: 1px solid rgba(177, 195, 212, .125);
 }
 .modal-footer > li > button {
     display: flex;
@@ -378,21 +378,28 @@ body.modal-open #modal {
 
 
 
-.modal-body .user-item {
-    height: 3rem;
+#modal .user-item {
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.modal-body .user-item > .image > [class^="material-icons"] {
+#modal .user-item > .image > [class^="material-icons"] {
     font-size: 2.5rem;
     display: block;
     color: rgb(112, 176, 236);
     margin-left: -.125rem;
 }
-.modal-body .user-item > .name {
+#modal .user-item > .name {
     margin-left: .5rem;
     font-size: 1.125rem;
+}
+#modal .user-item button {
+    color: #fff;
+    font-size: .8125rem;
+    border-radius: 4rem;
+    border: 1px solid rgba(177, 195, 212, .125);
+    padding: .375rem .75rem;
 }
 
 
