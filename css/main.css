@@ -396,12 +396,50 @@ body.modal-open #modal {
     margin-left: .5rem;
     font-size: 1.125rem;
 }
-#modal .user-item button {
+/*#modal .user-item button {
     color: #fff;
     font-size: .8125rem;
     border-radius: 4rem;
     border: 1px solid rgba(177, 195, 212, .125);
     padding: .375rem .75rem;
+}*/
+
+#modal .group-item {
+    height: 8rem;
+    background-color: rgb(19, 20, 21);
+    border-radius: .5rem;
+    border: 1px solid rgba(255, 255, 255, .125);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .25);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+#modal .group-item > .name {
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+#modal .group-item > .description {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#modal .group-item > .description > * {
+    padding: .75rem;
+    display: flex;
+    align-items: center;
+}
+#modal .group-item > .description .num_of_members > [class^="material-icons"] {
+    color: #fff;
+    font-size: 1.125rem;
+}
+#modal .group-item > .description .num_of_members > p {
+    margin-left: .25rem;
+    font-size: .875rem;
 }
 
 
