@@ -7,11 +7,9 @@
     border-top: 1px solid rgba(177, 195, 212, .25);
 }
 .share_location_all-button {
-    margin-left: auto;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    height: 100%;
 }
 .share_location_all-button [class^="material-icons"] {
     color: rgb(177, 195, 212);

@@ -76,6 +76,9 @@ html {
 }
 *, *:before, *:after {
 	box-sizing: inherit;
+    
+    font-family: inherit;
+    color: #fff;
 }
 
 html,
@@ -234,7 +237,7 @@ button {
 	font-size: 1.75rem;
 }
 #footer .icon.active > [class^="material-icons"] {
-	color: #70b3ec;
+	color: rgb(112, 176, 236);
 }
 
 
@@ -256,6 +259,13 @@ section > .header > .count {
     margin-left: .5rem;
     color: rgb(177, 195, 212);
 }
+section > .header > .header-right {
+    margin-left: auto;
+    height: 100%;
+}
+section > .header > .header-right > * {
+    height: 100%;
+}
 
 
 
@@ -269,7 +279,7 @@ section > .header > .count {
 #my_profile > .user-item > .image > [class^="material-icons"] {
     font-size: 3rem;
     display: block;
-    color: #70b3ec;
+    color: rgb(112, 176, 236);
     margin-left: -.25rem;
 }
 #my_profile > .user-item > .text {
@@ -333,7 +343,11 @@ body.modal-open #modal {
     font-size: 1.125rem;
 }
 .modal-body {
-    padding: 0 1rem;
+    padding: .5rem 1rem;
+}
+.modal-body > p {
+    font-size: .875rem;
+    color: rgb(177, 195, 212);
 }
 .modal-footer {
     margin-top: 1rem;
@@ -358,25 +372,58 @@ body.modal-open #modal {
     padding: .625rem;
 }
 .modal-footer > li > button:active {
-    color: #70b3ec;
+    color: rgb(112, 176, 236);
 }
 
 
 
 .modal-body .user-item {
-    display: flex;
     height: 3rem;
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem 0;
 }
 .modal-body .user-item > .image > [class^="material-icons"] {
     font-size: 2.5rem;
     display: block;
-    color: #70b3ec;
+    color: rgb(112, 176, 236);
     margin-left: -.125rem;
 }
 .modal-body .user-item > .name {
     margin-left: .5rem;
     font-size: 1.125rem;
+}
+
+
+
+/* input text */
+
+input, button,
+[type=button], [type=reset], [type=submit], [type=text], [type="radio"], [type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    outline: none !important;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+input[type="text"] {
+    color: #fff;
+    font-size: .875rem;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    padding: .625rem .875rem;
+    transition: all .1s;
+    background-color: rgba(34, 48, 63, .75);
+    border-bottom: .1875rem solid rgba(112, 176, 236, .75);
+}
+input[type="text"]:hover {
+    background-color: rgba(34, 48, 63, .875);
+    border-bottom: .1875rem solid rgba(112, 176, 236, .875);
+}
+input[type="text"]:focus {
+    background-color: rgb(34, 48, 63);
+    border-bottom: .1875rem solid rgb(112, 176, 236);
 }

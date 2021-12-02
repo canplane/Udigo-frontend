@@ -48,7 +48,7 @@ section {
 #settings-my_profile > .image > [class^="material-icons"] {
     font-size: 5rem;
     display: block;
-    color: #70b3ec;
+    color: rgb(112, 176, 236);
     margin-left: -.25rem;
 }
 #settings-my_profile > .text {

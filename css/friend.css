@@ -6,13 +6,6 @@
     margin-top: .5rem;
     border-top: 1px solid rgba(177, 195, 212, .25);
 }
-.add_friend-button {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    height: 100%;
-}
 
 
 
@@ -28,7 +21,7 @@
 #my_friends .user-item > .image > [class^="material-icons"] {
     font-size: 2.25rem;
     display: block;
-    color: #70b3ec;
+    color: rgb(112, 176, 236);
     margin-left: -.125rem;
 }
 #my_friends .user-item > .name {

@@ -1,5 +1,6 @@
 const $body = document.querySelector("body");
 const $modal = document.querySelector("#modal");
+
 const $notices = document.querySelectorAll(".notice-item");
 
 
@@ -31,6 +32,4 @@ function noticeClickEvent() {
 </ul>
 `
 }
-
-
 $notices[1].addEventListener("click", noticeClickEvent);
