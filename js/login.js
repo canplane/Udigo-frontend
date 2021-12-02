@@ -1,6 +1,6 @@
 /* login */
 
-if (naver !== undefined) {
+if (typeof naver !== "undefined") {
     let naverLogin = new naver.LoginWithNaverId(
             {
                 clientId: "9njxqeI2asAlQ_BNLXuQ",           // 내 애플리케이션 정보에 cliendId를 입력
@@ -16,7 +16,7 @@ if (naver !== undefined) {
 
 /* join */
 
-function create_id() {
+/*function create_id() {
     let id = document.querySelector("#user_id");
     let regex_id = /^[a-zA-z0-9]{4,16}$/;
     
@@ -28,4 +28,4 @@ function create_id() {
         $target.disabled = false;
         $target.classList.add("allow_id");
     }
-}
+}*/
