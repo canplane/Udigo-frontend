@@ -30,7 +30,7 @@ function _addFriendButton_clickEvent_1() {
     const $modalFooter = document.querySelector("#modal > .modal-footer");
     $modalBody.innerHTML = `
 <div class="input-user_id">
-    <input type="text" placeholder="사용자 ID를 입력하세요" style="width: 100%;">
+    <input type="text" placeholder="사용자 ID를 입력하세요" autofocus">
 </div>`;
     $modalFooter.innerHTML = `
 <li><button onclick="_addFriendButton_clickEvent_2()">사용자 검색</button></li>

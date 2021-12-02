@@ -313,7 +313,7 @@ body.modal-open::after {
     left: 0;
     display: block;
     background-color: #000;
-    opacity: .75;
+    opacity: .625;
 }
 
 #modal {
