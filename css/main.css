@@ -316,7 +316,6 @@ body.modal-open::after {
 
 #modal {
     visibility: hidden;
-    max-width: 32rem;
 }
 body.modal-open #modal {
     visibility: visible;
@@ -327,6 +326,7 @@ body.modal-open #modal {
     transform: translate(-50%, -50%);
     
     width: 80%;
+    max-width: 32rem;
     border-radius: 1rem;
 
     background-color: rgba(24, 34, 45, .5);
