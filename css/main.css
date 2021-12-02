@@ -316,6 +316,7 @@ body.modal-open::after {
 
 #modal {
     visibility: hidden;
+    max-width: 32rem;
 }
 body.modal-open #modal {
     visibility: visible;
