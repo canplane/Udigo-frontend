@@ -419,7 +419,7 @@ input, button,
 
 input[type="text"] {
     color: #fff;
-    font-size: .875rem;
+    font-size: 1rem;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
     padding: .625rem .875rem;
