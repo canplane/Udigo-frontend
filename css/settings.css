@@ -87,3 +87,14 @@ section {
     background-color: #f7e600;
     color: #3a1d1d;
 }
+
+
+
+/* modal */
+
+#modal.change_name .input-new_name {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -262,9 +262,18 @@ section > .header > .count {
 section > .header > .header-right {
     margin-left: auto;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 section > .header > .header-right > * {
     height: 100%;
+}
+.vhr {
+    margin: 0 .5rem;
+    width: 1px;
+    height: 60% !important;
+    background-color: rgba(177, 195, 212, .25);
 }
 
 
@@ -346,14 +355,14 @@ body.modal-open #modal {
     font-size: 1.125rem;
 }
 .modal-body {
-    padding: 0 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 .modal-body > p {
     font-size: .875rem;
     color: rgb(177, 195, 212);
+    text-align: center;
 }
 .modal-footer {
-    margin-top: 1rem;
     display: flex;
     flex-direction: row;
 }
@@ -464,11 +473,12 @@ input[type="text"] {
     border-top-right-radius: .25rem;
     padding: .625rem .875rem;
     transition: all .1s;
-    background-color: rgba(34, 48, 63, .75);
+    background-color: rgba(34, 48, 63, .5);
     border-bottom: .1875rem solid rgba(112, 176, 236, .75);
+    width: 100%;
 }
 input[type="text"]:hover {
-    background-color: rgba(34, 48, 63, .875);
+    background-color: rgba(34, 48, 63, .75);
     border-bottom: .1875rem solid rgba(112, 176, 236, .875);
 }
 input[type="text"]:focus {

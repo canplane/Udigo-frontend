@@ -6,19 +6,26 @@
     margin-top: .5rem;
     border-top: 1px solid rgba(177, 195, 212, .25);
 }
-.share_location_all-button {
+.button-share_location_all {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    padding: 0 .5rem;
 }
-.share_location_all-button [class^="material-icons"] {
+.button-share_location_all [class^="material-icons"] {
     color: rgb(177, 195, 212);
     font-size: 1.5rem;
 }
-.share_location_all-button > p {
+.button-share_location_all > p {
     color: rgb(177, 195, 212);
     margin-right: .375rem;
-    font-size: .875rem;
+    font-size: .75rem;
+}
+.button-share_location_all.on [class^="material-icons"] {
+    color: rgb(112, 176, 236);
+}
+.button-share_location_all.on > p {
+    color: rgb(112, 176, 236);
+    font-weight: bold;
 }
 
 
@@ -85,4 +92,15 @@
 }
 #my_groups .group-item > .description .share_location-button.disabled > p {
     color: #e57373;
+}
+
+
+
+/* modal */
+
+#modal.create_group .input-group_name {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

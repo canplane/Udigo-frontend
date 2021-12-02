@@ -20,7 +20,7 @@ function addFriendButton_clickEvent() {
     $body.classList.add("modal-open");
     $modal.classList.add("send_friend_request_by_id");
     $modal.innerHTML = `
-<p class="modal-header">ID로 친구 추가</p>
+<p class="modal-header">친구 추가</p>
 <div class="modal-body"></div>
 <ul class="modal-footer"></ul>`;
     _addFriendButton_clickEvent_1();
