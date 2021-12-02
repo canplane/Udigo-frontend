@@ -331,7 +331,7 @@ body.modal-open #modal {
     max-width: 32rem;
     border-radius: 1rem;
 
-    background-color: rgba(24, 34, 45, .5);
+    background-color: rgba(24, 34, 45, .375);
     border: 1px solid rgba(177, 195, 212, .125);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .5);
     backdrop-filter: blur(1rem);
