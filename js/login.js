@@ -1,14 +1,16 @@
 /* login */
 
-let naverLogin = new naver.LoginWithNaverId(
-        {
-            clientId: "9njxqeI2asAlQ_BNLXuQ",           // 내 애플리케이션 정보에 cliendId를 입력
-            callbackUrl: "loginService/login/naver",    // 내 애플리케이션 API 설정의 Callback URL을 입력
-            isPopup: false,
-            callbackHandle: true
-        }
-    );
-naverLogin.init();
+if (naver !== undefined) {
+    let naverLogin = new naver.LoginWithNaverId(
+            {
+                clientId: "9njxqeI2asAlQ_BNLXuQ",           // 내 애플리케이션 정보에 cliendId를 입력
+                callbackUrl: "loginService/login/naver",    // 내 애플리케이션 API 설정의 Callback URL을 입력
+                isPopup: false,
+                callbackHandle: true
+            }
+        );
+    naverLogin.init();
+}
 
 
 
