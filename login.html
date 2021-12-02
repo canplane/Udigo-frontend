@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>로그인</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <!-- open graph -->
+    <meta name="title" property="og:title" content="Udigo">
+    <meta name="type" property="og:type" content="website">
+    <meta name="description" property="og:description" content="위치 공유 소셜 미디어 서비스">
+    <meta name="title" property="og:url" content="https://udigo.netlify.app">
+    <meta name="images" property="og:image" content="https://github.com/canplane/Udigo-frontend/blob/main/resrc/op-image.png?raw=true">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <main>
+        <div class="brand">
+            <img alt="logo" src="resrc/logo/vertical@4x.png">
+        </div>
+        <form class="login_type">
+            <button type="button" class="naver" id="naverIdLogin_loginButton">네이버로 로그인</button>
+            <button type="button" class="kakao" id="">카카오톡으로 로그인</button>
+        </form>
+    </main>
+    
+    <script src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js" charset="utf-8"></script>
+
+    <!-- js -->
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

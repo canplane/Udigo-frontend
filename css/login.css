@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+
+
+main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main > header {
+    margin-bottom: 2.5rem;
+
+    width: 100%;
+}
+
+
+
+/* login */
+
+.brand > img {
+    width: 15rem;
+}
+
+form.login_type {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.login_type > button {
+    width: 16rem;
+    border-radius: 4rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: .125rem;
+}
+form.login_type > button.naver {
+    background-color: #2db400;
+    color: #fff;
+}
+form.login_type > button.kakao {
+    background-color: #f7e600;
+    color: #3a1d1d;
+}
+
+
+
+/* join */
+
+form.user_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form.user_information input[type="submit"],
+form.spot_policy input[type="submit"] {
+    margin-top: 3rem;
+
+    width: 16rem;
+    border-radius: 4rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: .125rem;
+    background-color: rgb(30, 136, 229);
+}
+
+.input-item {
+    width: 18rem;
+}
+.input-item:not(:first-child) {
+    margin-top: 2rem;
+}
+.input-item > .field {
+    display: flex;
+    align-items: center;
+}
+.input-item > .field > label {
+    width: 3.5rem;
+}
+.input-item > .helper {
+    margin-top: .5rem;
+    padding-left: 3rem;
+    font-size: .75rem;
+    color: rgb(177, 195, 212);
+}
