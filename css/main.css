@@ -204,7 +204,7 @@ button {
 
 
 
-/* aside */
+/* footer */
 
 #footer {
     position: fixed;
@@ -306,6 +306,9 @@ body.modal-open::after {
 
 #modal {
     visibility: hidden;
+}
+body.modal-open #modal {
+    visibility: visible;
 
     position: fixed;
     left: 50%;
@@ -322,9 +325,6 @@ body.modal-open::after {
     -webkit-backdrop-filter: blur(1rem);
 
     z-index: 1000;
-}
-body.modal-open #modal {
-    visibility: visible;
 }
 
 .modal-header {
