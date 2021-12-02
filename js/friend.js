@@ -33,7 +33,7 @@ function _addFriendButton_clickEvent_1() {
     <input type="text" placeholder="사용자 ID를 입력하세요" autofocus">
 </div>`;
     $modalFooter.innerHTML = `
-<li><button onclick="_addFriendButton_clickEvent_2()">사용자 검색</button></li>
+<li><button onclick="_addFriendButton_clickEvent_2()">ID 검색</button></li>
 <li><button onclick="modalDecline()">취소</button></li>`;
 }
 function _addFriendButton_clickEvent_2() {
@@ -49,7 +49,7 @@ function _addFriendButton_clickEvent_2() {
 </div>`;
     $modalFooter.innerHTML = `
 <li><button onclick="modalAccept()">친구 요청</button></li>
-<li><button onclick="_addFriendButton_clickEvent_1()">뒤로 가기</button></li>`;
+<li><button onclick="_addFriendButton_clickEvent_1()">이전</button></li>`;
 }
 
 $addFriendButton.addEventListener("click", addFriendButton_clickEvent);
