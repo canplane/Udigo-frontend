@@ -74,24 +74,24 @@
     margin-left: .25rem;
     font-size: .875rem;
 }
-#my_groups .group-item > .description .share_location-button {
+#my_groups .group-item > .description .share_location {
     flex-direction: row-reverse;
 }
-#my_groups .group-item > .description .share_location-button > [class^="material-icons"] {
-    color: #81c784;
+#my_groups .group-item > .description .share_location > [class^="material-icons"] {
+    color: #e57373;
     font-size: 1.5rem;
 }
-#my_groups .group-item > .description .share_location-button > p {
-    color: #81c784;
+#my_groups .group-item > .description .share_location > p {
+    color: #e57373;
     margin-right: .25rem;
     font-size: .875rem;
     font-weight: bold;
 }
-#my_groups .group-item > .description .share_location-button.disabled > [class^="material-icons"] {
-    color: #e57373;
+#my_groups .group-item > .description .share_location.on > [class^="material-icons"] {
+    color: #81c784;
 }
-#my_groups .group-item > .description .share_location-button.disabled > p {
-    color: #e57373;
+#my_groups .group-item > .description .share_location.on > p {
+    color: #81c784;
 }
 
 
