@@ -95,7 +95,7 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, li {
     margin: 0;
     padding: 0;
 	color: #fff;
@@ -281,4 +281,72 @@ section > .header > .count {
 #my_profile > .user-item > .text > .id {
     font-size: .75rem;
     color: rgb(177, 195, 212);
+}
+
+
+
+/* modal */
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 80%;
+    border-radius: 1rem;
+
+    background-color: rgba(24, 34, 45, .5);
+    border: 1px solid rgba(177, 195, 212, .25);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .3);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+}
+.modal-header {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.125rem;
+}
+.modal-body {
+    padding: 0 1rem 1rem 1rem;
+}
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+}
+.modal-footer > li {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(177, 195, 212, .25);
+}
+.modal-footer > li:not(:first-child) {
+    border-left: 1px solid rgba(177, 195, 212, .25);
+}
+.modal-footer > li > .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: .625rem;
+}
+
+
+
+.modal-body .user-item {
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+.modal-body .user-item > .image > [class^="material-icons"] {
+    font-size: 2.25rem;
+    display: block;
+    color: #70b3ec;
+    margin-left: -.125rem;
+}
+.modal-body .user-item > .name {
+    flex: 1;
+    margin-left: .5rem;
+    font-size: 1rem;
 }

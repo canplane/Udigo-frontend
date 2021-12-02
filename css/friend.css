@@ -25,7 +25,7 @@
     height: 3rem;
     align-items: center;
 }
-#my_friends .user-item > .img > [class^="material-icons"] {
+#my_friends .user-item > .image > [class^="material-icons"] {
     font-size: 2.25rem;
     display: block;
     color: #70b3ec;
