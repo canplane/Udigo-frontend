@@ -24,7 +24,7 @@ function changeName_clickEvent() {
 <p class="modal-header">이름 변경</p>
 <div class="modal-body">
     <div class="input-new_name">
-        <input type="text" placeholder="새로운 이름을 입력하세요" autofocus">
+        <input type="text" placeholder="새로운 이름을 입력하세요">
     </div>
 </div>
 <ul class="modal-footer">

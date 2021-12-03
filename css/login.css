@@ -7,6 +7,9 @@ body {
     position: fixed;
     width: 100%;
 }
+h2 {
+    line-height: 160%;
+}
 
 main {
     position: fixed;

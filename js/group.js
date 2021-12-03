@@ -28,7 +28,7 @@ function createGroup_clickEvent() {
 <p class="modal-header">그룹 생성</p>
 <div class="modal-body">
     <div class="input-group_name">
-        <input type="text" placeholder="생성할 그룹 이름을 입력하세요" autofocus">
+        <input type="text" placeholder="생성할 그룹 이름을 입력하세요">
     </div>
 </div>
 <ul class="modal-footer">
